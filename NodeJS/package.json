@@ -1,0 +1,31 @@
+{
+  "name": "quiz-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node_modules/.bin/pm2 -f start src/index.js --watch",
+    "test": "jest",
+    "stop": "node_modules/.bin/pm2 kill"
+  },
+  "jest": {
+    "testResultsProcessor": "./node_modules/jest-junit-reporter"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jest": "^26.4.2",
+    "jest-junit-reporter": "^1.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.3",
+    "npm": "^6.14.9",
+    "pm2": "^4.4.0",
+    "supertest": "^4.0.2",
+    "validator": "^13.1.1"
+  }
+}
